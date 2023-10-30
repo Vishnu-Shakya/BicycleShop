@@ -6,13 +6,13 @@ const Create = () => {
   const [body, setBody] = useState('');
   const [author, setAuthor] = useState('mario');
   const [isPending,setisPending]=useState(true);
-  const history=useHistory()
-
+  const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const blog = { title, body, author };
     setisPending(false)
+    
 
 
     fetch('http://localhost:8000/blogs/', {

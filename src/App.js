@@ -12,17 +12,18 @@ function App() {
         <Navbar />
         <div className="content">
           <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/create">
+            <Route exact path="/create">
               <Create />
             </Route>
-            <Route path="/blogs/:id">
+            <Route  path="/">
+              <Home />
+            </Route>
+
+            <Route  path="/blogs/:id">
               <BlogDetails />
             </Route>
             <Route>
-              <NotFound path="*"/>
+              <NotFound path="*" />
             </Route>
           </Switch>
         </div>
